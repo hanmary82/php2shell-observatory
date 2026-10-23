@@ -1,0 +1,4381 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-10-23T05:21:51.628Z",
+  "collectedAt": "2026-10-23T05:21:55.149Z",
+  "sources": [
+    {
+      "id": "censys",
+      "name": "Censys ARC",
+      "kind": "live",
+      "country": "US",
+      "language": "en",
+      "url": "https://php2shell.censys.com/",
+      "fetchUrl": "https://php2shell.censys.com/api/data",
+      "publishedAt": null,
+      "unit": "service",
+      "description": "인터넷에 노출된 PHP 서비스. IP 또는 호스트명과 포트 조합이며, 고유 서버·웹사이트 수와 다릅니다.",
+      "status": "ok",
+      "fetchedAt": "2026-10-23T05:21:53.677Z",
+      "verifiedAt": "2026-10-23T05:21:53.677Z",
+      "checkedAt": "2026-10-23T05:21:53.677Z",
+      "hash": "5e19221e593b85c19448826e98981bf3826be3fb4909938f086b67d89102a532",
+      "metrics": [
+        {
+          "id": "observed",
+          "label": "관측 PHP 서비스",
+          "value": 84469257,
+          "unit": "service",
+          "category": "exposure"
+        },
+        {
+          "id": "affected",
+          "label": "영향 버전 · 지원 브랜치",
+          "value": 11522684,
+          "unit": "service",
+          "category": "exposure"
+        },
+        {
+          "id": "fixed",
+          "label": "수정 버전 표시 서비스",
+          "value": 7018025,
+          "unit": "service",
+          "category": "patch"
+        },
+        {
+          "id": "countries",
+          "label": "관측 국가·지역",
+          "value": 236,
+          "unit": "country",
+          "category": "geography"
+        }
+      ],
+      "measuredAt": "2026-10-23 04:15:10.820405+00:00"
+    },
+    {
+      "id": "censys-advisory",
+      "name": "Censys Advisory",
+      "kind": "report",
+      "country": "US",
+      "language": "en",
+      "url": "https://censys.com/advisory/cve-2026-109618-cve-2026-109619/",
+      "publishedAt": "2026-10-22",
+      "unit": "host",
+      "description": "PHP 호스트와 웹 자산을 각각 집계한 10월 22일 갱신 보고서. ARC 서비스 집계와 단위가 다릅니다.",
+      "status": "ok",
+      "fetchedAt": "2026-10-23T05:21:53.454Z",
+      "verifiedAt": "2026-10-23T05:21:53.454Z",
+      "checkedAt": "2026-10-23T05:21:53.454Z",
+      "hash": "e11def1961708b1ba5691f3a2460a43a68451222327c583c9b4fe6993e441c30",
+      "metrics": [
+        {
+          "id": "hosts",
+          "label": "관측 PHP 호스트",
+          "value": 3082629,
+          "unit": "host",
+          "category": "exposure"
+        },
+        {
+          "id": "properties",
+          "label": "관측 PHP 웹 자산",
+          "value": 56663669,
+          "unit": "web_property",
+          "category": "exposure"
+        }
+      ],
+      "measuredAt": "2026-10-22",
+      "error": null
+    },
+    {
+      "id": "ox",
+      "name": "OX Security",
+      "kind": "report",
+      "country": "IL",
+      "language": "en",
+      "url": "https://www.ox.security/blog/php2shell-24-hours-in-99-3-of-measurable-php-instances-are-still-unpatched/",
+      "publishedAt": "2026-10-22",
+      "unit": "instance",
+      "description": "Shodan에 색인된 PHP 인스턴스. 공개 후 0·12·24시간 관측. 버전이 식별되는 표본만 패치 비율 분모에 포함합니다.",
+      "status": "ok",
+      "fetchedAt": "2026-10-23T05:21:55.145Z",
+      "verifiedAt": "2026-10-23T05:21:55.145Z",
+      "checkedAt": "2026-10-23T05:21:55.145Z",
+      "hash": "a05ffe54625f684765efa075ed8eefaf12ef83211a79ea68c6ee27186276706c",
+      "metrics": [
+        {
+          "id": "observed",
+          "label": "24시간 후 관측 인스턴스",
+          "value": 2206457,
+          "unit": "instance",
+          "category": "exposure"
+        },
+        {
+          "id": "unpatched",
+          "label": "24시간 후 미수정 버전",
+          "value": 1974890,
+          "unit": "instance",
+          "category": "patch"
+        },
+        {
+          "id": "patched",
+          "label": "24시간 후 수정 버전",
+          "value": 14151,
+          "unit": "instance",
+          "category": "patch"
+        },
+        {
+          "id": "unpatched-rate",
+          "label": "24시간 후 미수정 비율",
+          "value": 99.28,
+          "unit": "percent",
+          "category": "patch",
+          "denominator": "미수정 1,974,890 + 수정 14,151",
+          "note": "원문 표의 비율. 제목의 99.3%는 반올림 값입니다."
+        }
+      ],
+      "measuredAt": "2026-10-22",
+      "error": null
+    },
+    {
+      "id": "flare",
+      "name": "Flare Research",
+      "kind": "report",
+      "country": "CA",
+      "language": "en",
+      "url": "https://flare.io/learn/resources/blog/php2shell-exposure",
+      "publishedAt": "2026-10-22",
+      "unit": "service_record",
+      "description": "상용 인터넷 스캔 플랫폼 두 곳의 기존 레코드. PHP 버전을 노출하는 서비스 표본입니다.",
+      "status": "ok",
+      "fetchedAt": "2026-10-23T05:21:54.153Z",
+      "verifiedAt": "2026-10-23T05:21:54.153Z",
+      "checkedAt": "2026-10-23T05:21:54.153Z",
+      "hash": "5f99a5040d171d4b93d8be41e95485e765b7f170d73755e03f97c3dfc75edd99",
+      "metrics": [
+        {
+          "id": "observed",
+          "label": "버전 공개 서비스 레코드",
+          "value": 2220231,
+          "unit": "service_record",
+          "category": "exposure"
+        },
+        {
+          "id": "eol",
+          "label": "상위 프로젝트 지원 종료 브랜치",
+          "value": 1613623,
+          "unit": "service_record",
+          "category": "version"
+        },
+        {
+          "id": "eol-rate",
+          "label": "상위 프로젝트 지원 종료 비율",
+          "value": 72.7,
+          "unit": "percent",
+          "category": "version",
+          "denominator": "관측 서비스 레코드 2,220,231"
+        },
+        {
+          "id": "countries",
+          "label": "관측 국가·지역",
+          "value": 224,
+          "unit": "country",
+          "category": "geography"
+        },
+        {
+          "id": "backport-unknown",
+          "label": "배포판 백포트 여부 불명 레코드",
+          "value": 418288,
+          "unit": "service_record",
+          "category": "version"
+        }
+      ],
+      "measuredAt": "2026-10-22",
+      "error": null
+    },
+    {
+      "id": "virustotal",
+      "name": "VirusTotal",
+      "kind": "report",
+      "country": "ES",
+      "language": "en",
+      "url": "https://blog.virustotal.com/2026/10/sizing-php-exposure-window-for-cve-2026.html",
+      "publishedAt": "2026-10-21",
+      "unit": "ip",
+      "description": "PHP로 식별한 IP 주소. 큰 결과 집합은 7회 검색 중앙값을 반올림한 근삿값입니다.",
+      "status": "ok",
+      "fetchedAt": "2026-10-23T05:21:54.696Z",
+      "verifiedAt": "2026-10-23T05:21:54.696Z",
+      "checkedAt": "2026-10-23T05:21:54.696Z",
+      "hash": "0c3ee248897ebafc8f75d682fdf058e6189ba86b723dc5a109c32122d5c288c0",
+      "metrics": [
+        {
+          "id": "observed",
+          "label": "PHP로 식별한 IP",
+          "value": 5100000,
+          "unit": "ip",
+          "category": "exposure",
+          "approximate": true
+        },
+        {
+          "id": "open",
+          "label": "열린 포트가 있는 PHP IP",
+          "value": 3800000,
+          "unit": "ip",
+          "category": "exposure",
+          "approximate": true
+        },
+        {
+          "id": "versioned",
+          "label": "버전을 공개한 IP",
+          "value": 1100000,
+          "unit": "ip",
+          "category": "version",
+          "approximate": true
+        },
+        {
+          "id": "eol",
+          "label": "PHP 5.4–8.1 IP",
+          "value": 758000,
+          "unit": "ip",
+          "category": "version",
+          "approximate": true
+        },
+        {
+          "id": "supported",
+          "label": "PHP 8.2–8.5 IP",
+          "value": 272000,
+          "unit": "ip",
+          "category": "version",
+          "approximate": true
+        }
+      ],
+      "measuredAt": "2026-10-21",
+      "error": null
+    },
+    {
+      "id": "unit42",
+      "name": "Unit 42",
+      "kind": "report",
+      "country": "US",
+      "language": "en",
+      "url": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
+      "publishedAt": "2026-10-21",
+      "unit": "instance",
+      "description": "Cortex Xpanse가 관측한 잠재 영향 인스턴스. 실제 취약성이 확인된 시스템 수가 아닙니다.",
+      "status": "ok",
+      "fetchedAt": "2026-10-23T05:21:53.236Z",
+      "verifiedAt": "2026-10-23T05:21:53.236Z",
+      "checkedAt": "2026-10-23T05:21:53.236Z",
+      "hash": "cd1ba860e92bfdfcdef74908692d45f2eba0f1e62cad5d33417c20574ca7df81",
+      "metrics": [
+        {
+          "id": "potential",
+          "label": "잠재 영향 노출 인스턴스",
+          "value": 22600000,
+          "unit": "instance",
+          "category": "exposure",
+          "lowerBound": true
+        }
+      ],
+      "measuredAt": "2026-10-21",
+      "error": null
+    },
+    {
+      "id": "php",
+      "name": "PHP Project",
+      "kind": "advisory",
+      "country": "GLOBAL",
+      "language": "en",
+      "url": "https://www.php.net/archive/2026.php",
+      "publishedAt": "2026-10-21",
+      "unit": "version",
+      "description": "공식 보안 공지 및 수정 버전의 원천입니다.",
+      "status": "ok",
+      "fetchedAt": "2026-10-23T05:21:53.458Z",
+      "verifiedAt": "2026-10-23T05:21:53.458Z",
+      "checkedAt": "2026-10-23T05:21:53.458Z",
+      "hash": "ba309477aae4195e653a867652d8c4a6d4f4a09601f5c63b4cf767f880d31884",
+      "metrics": [
+        {
+          "id": "cvss",
+          "label": "각 CVE의 CVSS v4.0",
+          "value": 9.2,
+          "unit": "score",
+          "category": "advisory"
+        },
+        {
+          "id": "cves",
+          "label": "관련 CVE",
+          "value": 2,
+          "unit": "cve",
+          "category": "advisory"
+        }
+      ],
+      "measuredAt": "2026-10-21",
+      "error": null
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "kind": "advisory",
+      "country": "US",
+      "language": "en",
+      "url": "https://blog.cloudflare.com/php-vulnerabilities-waf-protection/",
+      "publishedAt": "2026-10-21",
+      "unit": "event",
+      "description": "보호 배포와 공격 관측에 관한 운영사 공지. 그래프 이미지에서 수치를 추정하지 않습니다.",
+      "status": "ok",
+      "fetchedAt": "2026-10-23T05:21:53.484Z",
+      "verifiedAt": "2026-10-23T05:21:53.484Z",
+      "checkedAt": "2026-10-23T05:21:53.484Z",
+      "hash": "6ce25406dc4526ca9c8acb92f895509cad55b6a7a7bcc18139389b967135d171",
+      "metrics": [],
+      "measuredAt": "2026-10-21",
+      "error": null
+    }
+  ],
+  "live": {
+    "cve": {
+      "title": "CVE-2026-109618 / CVE-2026-109619",
+      "advisory": "https://censys.com/advisory/cve-2026-109618-cve-2026-109619/",
+      "fixed": {
+        "8.2": "8.2.35",
+        "8.3": "8.3.36",
+        "8.4": "8.4.27",
+        "8.5": "8.5.12"
+      }
+    },
+    "snapshot": {
+      "refreshed_at": "2026-10-23 04:15:10.820405+00:00",
+      "kpi": {
+        "php_targets": 84469257,
+        "affected": 11522684,
+        "affected_nofix": 23274613,
+        "patched": 7018025,
+        "unknown": 42653935,
+        "implausible": 380443,
+        "phpinfo_targets": 228129,
+        "countries": 236,
+        "patched_total": 6535112,
+        "were_vulnerable": 41329523,
+        "fixed_24h": 6179901,
+        "tracking_since": "2026-10-21"
+      },
+      "branches": [
+        {
+          "branch": "8.2",
+          "status": "unknown",
+          "targets": 289109
+        },
+        {
+          "branch": "9.0",
+          "status": "patched",
+          "targets": 80
+        },
+        {
+          "branch": "5.1",
+          "status": "affected_nofix",
+          "targets": 46670
+        },
+        {
+          "branch": "7.2",
+          "status": "affected_nofix",
+          "targets": 2585172
+        },
+        {
+          "branch": "8.2",
+          "status": "patched",
+          "targets": 1689400
+        },
+        {
+          "branch": "8.3",
+          "status": "unknown",
+          "targets": 311401
+        },
+        {
+          "branch": "5.4",
+          "status": "affected_nofix",
+          "targets": 1283166
+        },
+        {
+          "branch": "8.4",
+          "status": "patched",
+          "targets": 1364974
+        },
+        {
+          "branch": "7.0",
+          "status": "affected_nofix",
+          "targets": 605743
+        },
+        {
+          "branch": "7.4",
+          "status": "affected_nofix",
+          "targets": 7600848
+        },
+        {
+          "branch": "8.3",
+          "status": "affected",
+          "targets": 4828854
+        },
+        {
+          "branch": "4.2",
+          "status": "affected_nofix",
+          "targets": 739
+        },
+        {
+          "branch": "5.0",
+          "status": "affected_nofix",
+          "targets": 9898
+        },
+        {
+          "branch": "7.1",
+          "status": "affected_nofix",
+          "targets": 429113
+        },
+        {
+          "branch": "5.5",
+          "status": "affected_nofix",
+          "targets": 330890
+        },
+        {
+          "branch": "4.4",
+          "status": "affected_nofix",
+          "targets": 174097
+        },
+        {
+          "branch": "5.2",
+          "status": "affected_nofix",
+          "targets": 1988663
+        },
+        {
+          "branch": "7.3",
+          "status": "affected_nofix",
+          "targets": 1150770
+        },
+        {
+          "branch": "8.5",
+          "status": "unknown",
+          "targets": 172603
+        },
+        {
+          "branch": "8.5",
+          "status": "affected",
+          "targets": 1219714
+        },
+        {
+          "branch": "unknown",
+          "status": "unknown",
+          "targets": 41528073
+        },
+        {
+          "branch": "4.1",
+          "status": "affected_nofix",
+          "targets": 5027
+        },
+        {
+          "branch": "5.6",
+          "status": "affected_nofix",
+          "targets": 2014449
+        },
+        {
+          "branch": "8.4",
+          "status": "affected",
+          "targets": 1579515
+        },
+        {
+          "branch": "4.0",
+          "status": "affected_nofix",
+          "targets": 7127
+        },
+        {
+          "branch": "5.3",
+          "status": "affected_nofix",
+          "targets": 754836
+        },
+        {
+          "branch": "8.1",
+          "status": "affected_nofix",
+          "targets": 2645738
+        },
+        {
+          "branch": "8.5",
+          "status": "patched",
+          "targets": 1577887
+        },
+        {
+          "branch": "3.0",
+          "status": "affected_nofix",
+          "targets": 732
+        },
+        {
+          "branch": "8.3",
+          "status": "patched",
+          "targets": 2384986
+        },
+        {
+          "branch": "8.4",
+          "status": "unknown",
+          "targets": 352749
+        },
+        {
+          "branch": "8.6",
+          "status": "patched",
+          "targets": 698
+        },
+        {
+          "branch": "8.2",
+          "status": "affected",
+          "targets": 3894601
+        },
+        {
+          "branch": "8.0",
+          "status": "affected_nofix",
+          "targets": 1594964
+        },
+        {
+          "branch": "4.3",
+          "status": "affected_nofix",
+          "targets": 45971
+        }
+      ],
+      "countries": [
+        {
+          "country_code": "US",
+          "targets": 27605510,
+          "affected": 11144623,
+          "versioned": 13237094,
+          "patched": 2092471,
+          "were_vulnerable": 13186506,
+          "fixed": 2043142,
+          "fixed_24h": 1996005
+        },
+        {
+          "country_code": "CA",
+          "targets": 1189476,
+          "affected": 491145,
+          "versioned": 686988,
+          "patched": 195843,
+          "were_vulnerable": 676439,
+          "fixed": 185308,
+          "fixed_24h": 177185
+        },
+        {
+          "country_code": "ES",
+          "targets": 826897,
+          "affected": 276585,
+          "versioned": 421919,
+          "patched": 145334,
+          "were_vulnerable": 416840,
+          "fixed": 140301,
+          "fixed_24h": 134373
+        },
+        {
+          "country_code": "CO",
+          "targets": 36660,
+          "affected": 16617,
+          "versioned": 17444,
+          "patched": 827,
+          "were_vulnerable": 17385,
+          "fixed": 770,
+          "fixed_24h": 737
+        },
+        {
+          "country_code": "JP",
+          "targets": 2992538,
+          "affected": 1269091,
+          "versioned": 1466843,
+          "patched": 197752,
+          "were_vulnerable": 1444603,
+          "fixed": 175576,
+          "fixed_24h": 168735
+        },
+        {
+          "country_code": "TW",
+          "targets": 268719,
+          "affected": 146936,
+          "versioned": 151942,
+          "patched": 5006,
+          "were_vulnerable": 151715,
+          "fixed": 4782,
+          "fixed_24h": 4587
+        },
+        {
+          "country_code": "RO",
+          "targets": 165692,
+          "affected": 59392,
+          "versioned": 65947,
+          "patched": 6555,
+          "were_vulnerable": 65400,
+          "fixed": 6013,
+          "fixed_24h": 5810
+        },
+        {
+          "country_code": "NP",
+          "targets": 31629,
+          "affected": 26084,
+          "versioned": 26314,
+          "patched": 230,
+          "were_vulnerable": 26296,
+          "fixed": 213,
+          "fixed_24h": 211
+        },
+        {
+          "country_code": "KZ",
+          "targets": 64248,
+          "affected": 25936,
+          "versioned": 28626,
+          "patched": 2690,
+          "were_vulnerable": 28494,
+          "fixed": 2558,
+          "fixed_24h": 2423
+        },
+        {
+          "country_code": "BD",
+          "targets": 157059,
+          "affected": 113939,
+          "versioned": 115091,
+          "patched": 1152,
+          "were_vulnerable": 115063,
+          "fixed": 1160,
+          "fixed_24h": 1109
+        },
+        {
+          "country_code": "MW",
+          "targets": 727,
+          "affected": 369,
+          "versioned": 416,
+          "patched": 47,
+          "were_vulnerable": 415,
+          "fixed": 46,
+          "fixed_24h": 46
+        },
+        {
+          "country_code": "CD",
+          "targets": 486,
+          "affected": 147,
+          "versioned": 175,
+          "patched": 28,
+          "were_vulnerable": 171,
+          "fixed": 24,
+          "fixed_24h": 24
+        },
+        {
+          "country_code": "SD",
+          "targets": 261,
+          "affected": 129,
+          "versioned": 190,
+          "patched": 61,
+          "were_vulnerable": 189,
+          "fixed": 60,
+          "fixed_24h": 60
+        },
+        {
+          "country_code": "GP",
+          "targets": 256,
+          "affected": 124,
+          "versioned": 127,
+          "patched": 3,
+          "were_vulnerable": 127,
+          "fixed": 3,
+          "fixed_24h": 2
+        },
+        {
+          "country_code": "LC",
+          "targets": 67,
+          "affected": 30,
+          "versioned": 35,
+          "patched": 5,
+          "were_vulnerable": 35,
+          "fixed": 5,
+          "fixed_24h": 5
+        },
+        {
+          "country_code": "MH",
+          "targets": 13,
+          "affected": 5,
+          "versioned": 6,
+          "patched": 1,
+          "were_vulnerable": 5,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "DE",
+          "targets": 10414522,
+          "affected": 4427986,
+          "versioned": 5973055,
+          "patched": 1545069,
+          "were_vulnerable": 5811956,
+          "fixed": 1384161,
+          "fixed_24h": 1236766
+        },
+        {
+          "country_code": "IN",
+          "targets": 932171,
+          "affected": 358141,
+          "versioned": 385712,
+          "patched": 27571,
+          "were_vulnerable": 384212,
+          "fixed": 26076,
+          "fixed_24h": 24927
+        },
+        {
+          "country_code": "ID",
+          "targets": 754933,
+          "affected": 525695,
+          "versioned": 535379,
+          "patched": 9684,
+          "were_vulnerable": 534818,
+          "fixed": 9141,
+          "fixed_24h": 8437
+        },
+        {
+          "country_code": "JE",
+          "targets": 135,
+          "affected": 65,
+          "versioned": 72,
+          "patched": 7,
+          "were_vulnerable": 72,
+          "fixed": 7,
+          "fixed_24h": 4
+        },
+        {
+          "country_code": "NG",
+          "targets": 3344,
+          "affected": 1515,
+          "versioned": 1673,
+          "patched": 158,
+          "were_vulnerable": 1667,
+          "fixed": 152,
+          "fixed_24h": 151
+        },
+        {
+          "country_code": "PF",
+          "targets": 536,
+          "affected": 182,
+          "versioned": 262,
+          "patched": 80,
+          "were_vulnerable": 260,
+          "fixed": 78,
+          "fixed_24h": 75
+        },
+        {
+          "country_code": "AG",
+          "targets": 58,
+          "affected": 26,
+          "versioned": 26,
+          "patched": 0,
+          "were_vulnerable": 26,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "KH",
+          "targets": 4373,
+          "affected": 3284,
+          "versioned": 3356,
+          "patched": 72,
+          "were_vulnerable": 3355,
+          "fixed": 71,
+          "fixed_24h": 70
+        },
+        {
+          "country_code": "PG",
+          "targets": 502,
+          "affected": 301,
+          "versioned": 318,
+          "patched": 17,
+          "were_vulnerable": 318,
+          "fixed": 17,
+          "fixed_24h": 17
+        },
+        {
+          "country_code": "TT",
+          "targets": 388,
+          "affected": 153,
+          "versioned": 162,
+          "patched": 9,
+          "were_vulnerable": 160,
+          "fixed": 7,
+          "fixed_24h": 7
+        },
+        {
+          "country_code": "AZ",
+          "targets": 4720,
+          "affected": 2841,
+          "versioned": 2884,
+          "patched": 43,
+          "were_vulnerable": 2882,
+          "fixed": 41,
+          "fixed_24h": 40
+        },
+        {
+          "country_code": "TG",
+          "targets": 252,
+          "affected": 130,
+          "versioned": 140,
+          "patched": 10,
+          "were_vulnerable": 140,
+          "fixed": 10,
+          "fixed_24h": 10
+        },
+        {
+          "country_code": "TD",
+          "targets": 18,
+          "affected": 11,
+          "versioned": 11,
+          "patched": 0,
+          "were_vulnerable": 11,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "FK",
+          "targets": 2,
+          "affected": 1,
+          "versioned": 1,
+          "patched": 0,
+          "were_vulnerable": 1,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "RU",
+          "targets": 3003015,
+          "affected": 1582229,
+          "versioned": 1940895,
+          "patched": 358666,
+          "were_vulnerable": 1931935,
+          "fixed": 349744,
+          "fixed_24h": 344797
+        },
+        {
+          "country_code": "FR",
+          "targets": 5138973,
+          "affected": 2248679,
+          "versioned": 2545133,
+          "patched": 296454,
+          "were_vulnerable": 2529820,
+          "fixed": 281244,
+          "fixed_24h": 259222
+        },
+        {
+          "country_code": "TR",
+          "targets": 638731,
+          "affected": 367184,
+          "versioned": 391269,
+          "patched": 24085,
+          "were_vulnerable": 390376,
+          "fixed": 23200,
+          "fixed_24h": 22714
+        },
+        {
+          "country_code": "CY",
+          "targets": 6546,
+          "affected": 3338,
+          "versioned": 3699,
+          "patched": 361,
+          "were_vulnerable": 3659,
+          "fixed": 321,
+          "fixed_24h": 305
+        },
+        {
+          "country_code": "IS",
+          "targets": 11811,
+          "affected": 3476,
+          "versioned": 4381,
+          "patched": 905,
+          "were_vulnerable": 4314,
+          "fixed": 841,
+          "fixed_24h": 696
+        },
+        {
+          "country_code": "NE",
+          "targets": 258,
+          "affected": 74,
+          "versioned": 78,
+          "patched": 4,
+          "were_vulnerable": 78,
+          "fixed": 4,
+          "fixed_24h": 4
+        },
+        {
+          "country_code": "TJ",
+          "targets": 1395,
+          "affected": 739,
+          "versioned": 743,
+          "patched": 4,
+          "were_vulnerable": 743,
+          "fixed": 4,
+          "fixed_24h": 4
+        },
+        {
+          "country_code": "MR",
+          "targets": 200,
+          "affected": 153,
+          "versioned": 154,
+          "patched": 1,
+          "were_vulnerable": 153,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "UG",
+          "targets": 1905,
+          "affected": 666,
+          "versioned": 717,
+          "patched": 51,
+          "were_vulnerable": 716,
+          "fixed": 50,
+          "fixed_24h": 49
+        },
+        {
+          "country_code": "SS",
+          "targets": 32,
+          "affected": 14,
+          "versioned": 14,
+          "patched": 0,
+          "were_vulnerable": 14,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "LI",
+          "targets": 506,
+          "affected": 171,
+          "versioned": 310,
+          "patched": 139,
+          "were_vulnerable": 308,
+          "fixed": 137,
+          "fixed_24h": 128
+        },
+        {
+          "country_code": "LS",
+          "targets": 222,
+          "affected": 192,
+          "versioned": 193,
+          "patched": 1,
+          "were_vulnerable": 192,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "NF",
+          "targets": 2,
+          "affected": 2,
+          "versioned": 2,
+          "patched": 0,
+          "were_vulnerable": 2,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "MX",
+          "targets": 122841,
+          "affected": 49621,
+          "versioned": 53240,
+          "patched": 3619,
+          "were_vulnerable": 52751,
+          "fixed": 3131,
+          "fixed_24h": 2997
+        },
+        {
+          "country_code": "HK",
+          "targets": 2426906,
+          "affected": 1003241,
+          "versioned": 1053535,
+          "patched": 50294,
+          "were_vulnerable": 1015954,
+          "fixed": 12728,
+          "fixed_24h": 12436
+        },
+        {
+          "country_code": "PT",
+          "targets": 92123,
+          "affected": 35399,
+          "versioned": 40710,
+          "patched": 5311,
+          "were_vulnerable": 40551,
+          "fixed": 5166,
+          "fixed_24h": 5069
+        },
+        {
+          "country_code": "CZ",
+          "targets": 626189,
+          "affected": 248656,
+          "versioned": 314016,
+          "patched": 65360,
+          "were_vulnerable": 310395,
+          "fixed": 61801,
+          "fixed_24h": 55914
+        },
+        {
+          "country_code": "MO",
+          "targets": 1142,
+          "affected": 582,
+          "versioned": 636,
+          "patched": 54,
+          "were_vulnerable": 628,
+          "fixed": 46,
+          "fixed_24h": 45
+        },
+        {
+          "country_code": "MK",
+          "targets": 4840,
+          "affected": 2939,
+          "versioned": 3025,
+          "patched": 86,
+          "were_vulnerable": 3024,
+          "fixed": 85,
+          "fixed_24h": 85
+        },
+        {
+          "country_code": "UY",
+          "targets": 6262,
+          "affected": 2512,
+          "versioned": 2669,
+          "patched": 157,
+          "were_vulnerable": 2660,
+          "fixed": 148,
+          "fixed_24h": 139
+        },
+        {
+          "country_code": "MC",
+          "targets": 824,
+          "affected": 171,
+          "versioned": 252,
+          "patched": 81,
+          "were_vulnerable": 250,
+          "fixed": 83,
+          "fixed_24h": 81
+        },
+        {
+          "country_code": "RS",
+          "targets": 26078,
+          "affected": 14764,
+          "versioned": 16952,
+          "patched": 2188,
+          "were_vulnerable": 16891,
+          "fixed": 2127,
+          "fixed_24h": 2025
+        },
+        {
+          "country_code": "KG",
+          "targets": 7012,
+          "affected": 4614,
+          "versioned": 4705,
+          "patched": 91,
+          "were_vulnerable": 4696,
+          "fixed": 82,
+          "fixed_24h": 81
+        },
+        {
+          "country_code": "MN",
+          "targets": 6726,
+          "affected": 2768,
+          "versioned": 2828,
+          "patched": 60,
+          "were_vulnerable": 2824,
+          "fixed": 56,
+          "fixed_24h": 56
+        },
+        {
+          "country_code": "IM",
+          "targets": 1085,
+          "affected": 841,
+          "versioned": 856,
+          "patched": 15,
+          "were_vulnerable": 856,
+          "fixed": 15,
+          "fixed_24h": 15
+        },
+        {
+          "country_code": "TM",
+          "targets": 712,
+          "affected": 130,
+          "versioned": 140,
+          "patched": 10,
+          "were_vulnerable": 140,
+          "fixed": 10,
+          "fixed_24h": 10
+        },
+        {
+          "country_code": "CW",
+          "targets": 307,
+          "affected": 105,
+          "versioned": 164,
+          "patched": 59,
+          "were_vulnerable": 151,
+          "fixed": 46,
+          "fixed_24h": 40
+        },
+        {
+          "country_code": "TN",
+          "targets": 7026,
+          "affected": 3703,
+          "versioned": 3880,
+          "patched": 177,
+          "were_vulnerable": 3877,
+          "fixed": 174,
+          "fixed_24h": 173
+        },
+        {
+          "country_code": "NA",
+          "targets": 1160,
+          "affected": 361,
+          "versioned": 448,
+          "patched": 87,
+          "were_vulnerable": 444,
+          "fixed": 83,
+          "fixed_24h": 81
+        },
+        {
+          "country_code": "RW",
+          "targets": 1926,
+          "affected": 866,
+          "versioned": 881,
+          "patched": 15,
+          "were_vulnerable": 881,
+          "fixed": 15,
+          "fixed_24h": 13
+        },
+        {
+          "country_code": "AF",
+          "targets": 2021,
+          "affected": 1860,
+          "versioned": 1861,
+          "patched": 1,
+          "were_vulnerable": 1861,
+          "fixed": 1,
+          "fixed_24h": 1
+        },
+        {
+          "country_code": "GY",
+          "targets": 88,
+          "affected": 44,
+          "versioned": 50,
+          "patched": 6,
+          "were_vulnerable": 49,
+          "fixed": 5,
+          "fixed_24h": 5
+        },
+        {
+          "country_code": "VC",
+          "targets": 29,
+          "affected": 4,
+          "versioned": 4,
+          "patched": 0,
+          "were_vulnerable": 4,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "GM",
+          "targets": 111,
+          "affected": 39,
+          "versioned": 41,
+          "patched": 2,
+          "were_vulnerable": 41,
+          "fixed": 2,
+          "fixed_24h": 2
+        },
+        {
+          "country_code": "SC",
+          "targets": 183,
+          "affected": 107,
+          "versioned": 131,
+          "patched": 24,
+          "were_vulnerable": 112,
+          "fixed": 5,
+          "fixed_24h": 5
+        },
+        {
+          "country_code": "FO",
+          "targets": 154,
+          "affected": 24,
+          "versioned": 110,
+          "patched": 86,
+          "were_vulnerable": 110,
+          "fixed": 86,
+          "fixed_24h": 83
+        },
+        {
+          "country_code": "ST",
+          "targets": 23,
+          "affected": 14,
+          "versioned": 14,
+          "patched": 0,
+          "were_vulnerable": 14,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "BB",
+          "targets": 93,
+          "affected": 33,
+          "versioned": 34,
+          "patched": 1,
+          "were_vulnerable": 33,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "GF",
+          "targets": 139,
+          "affected": 59,
+          "versioned": 63,
+          "patched": 4,
+          "were_vulnerable": 63,
+          "fixed": 4,
+          "fixed_24h": 4
+        },
+        {
+          "country_code": "PW",
+          "targets": 28,
+          "affected": 25,
+          "versioned": 27,
+          "patched": 2,
+          "were_vulnerable": 27,
+          "fixed": 2,
+          "fixed_24h": 2
+        },
+        {
+          "country_code": "ER",
+          "targets": 9,
+          "affected": 3,
+          "versioned": 3,
+          "patched": 0,
+          "were_vulnerable": 3,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "BL",
+          "targets": 14,
+          "affected": 14,
+          "versioned": 14,
+          "patched": 0,
+          "were_vulnerable": 14,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "TC",
+          "targets": 19,
+          "affected": 18,
+          "versioned": 18,
+          "patched": 0,
+          "were_vulnerable": 18,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "AE",
+          "targets": 30514,
+          "affected": 4729,
+          "versioned": 5853,
+          "patched": 1124,
+          "were_vulnerable": 5787,
+          "fixed": 1058,
+          "fixed_24h": 1008
+        },
+        {
+          "country_code": "SG",
+          "targets": 955716,
+          "affected": 481983,
+          "versioned": 504891,
+          "patched": 22908,
+          "were_vulnerable": 503572,
+          "fixed": 21658,
+          "fixed_24h": 20731
+        },
+        {
+          "country_code": "EG",
+          "targets": 6215,
+          "affected": 2785,
+          "versioned": 2835,
+          "patched": 50,
+          "were_vulnerable": 2828,
+          "fixed": 43,
+          "fixed_24h": 42
+        },
+        {
+          "country_code": "NZ",
+          "targets": 30477,
+          "affected": 11890,
+          "versioned": 14411,
+          "patched": 2521,
+          "were_vulnerable": 14255,
+          "fixed": 2366,
+          "fixed_24h": 2259
+        },
+        {
+          "country_code": "BO",
+          "targets": 7586,
+          "affected": 4532,
+          "versioned": 5251,
+          "patched": 719,
+          "were_vulnerable": 5245,
+          "fixed": 713,
+          "fixed_24h": 693
+        },
+        {
+          "country_code": "VE",
+          "targets": 5199,
+          "affected": 2846,
+          "versioned": 2960,
+          "patched": 114,
+          "were_vulnerable": 2955,
+          "fixed": 109,
+          "fixed_24h": 107
+        },
+        {
+          "country_code": "ME",
+          "targets": 662,
+          "affected": 469,
+          "versioned": 469,
+          "patched": 0,
+          "were_vulnerable": 469,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "PA",
+          "targets": 3306,
+          "affected": 1435,
+          "versioned": 1772,
+          "patched": 337,
+          "were_vulnerable": 1751,
+          "fixed": 316,
+          "fixed_24h": 309
+        },
+        {
+          "country_code": "CR",
+          "targets": 4485,
+          "affected": 2007,
+          "versioned": 2223,
+          "patched": 216,
+          "were_vulnerable": 2195,
+          "fixed": 189,
+          "fixed_24h": 184
+        },
+        {
+          "country_code": "MU",
+          "targets": 1965,
+          "affected": 1552,
+          "versioned": 1566,
+          "patched": 14,
+          "were_vulnerable": 1566,
+          "fixed": 14,
+          "fixed_24h": 14
+        },
+        {
+          "country_code": "GH",
+          "targets": 2092,
+          "affected": 1320,
+          "versioned": 1337,
+          "patched": 17,
+          "were_vulnerable": 1336,
+          "fixed": 16,
+          "fixed_24h": 14
+        },
+        {
+          "country_code": "TZ",
+          "targets": 2840,
+          "affected": 1497,
+          "versioned": 1551,
+          "patched": 54,
+          "were_vulnerable": 1551,
+          "fixed": 55,
+          "fixed_24h": 53
+        },
+        {
+          "country_code": "SO",
+          "targets": 181,
+          "affected": 93,
+          "versioned": 99,
+          "patched": 6,
+          "were_vulnerable": 99,
+          "fixed": 6,
+          "fixed_24h": 6
+        },
+        {
+          "country_code": "MQ",
+          "targets": 280,
+          "affected": 141,
+          "versioned": 147,
+          "patched": 6,
+          "were_vulnerable": 147,
+          "fixed": 6,
+          "fixed_24h": 5
+        },
+        {
+          "country_code": "GA",
+          "targets": 126,
+          "affected": 54,
+          "versioned": 73,
+          "patched": 19,
+          "were_vulnerable": 72,
+          "fixed": 18,
+          "fixed_24h": 18
+        },
+        {
+          "country_code": "BS",
+          "targets": 271,
+          "affected": 111,
+          "versioned": 153,
+          "patched": 42,
+          "were_vulnerable": 150,
+          "fixed": 39,
+          "fixed_24h": 39
+        },
+        {
+          "country_code": "SZ",
+          "targets": 227,
+          "affected": 185,
+          "versioned": 200,
+          "patched": 15,
+          "were_vulnerable": 199,
+          "fixed": 14,
+          "fixed_24h": 14
+        },
+        {
+          "country_code": "LR",
+          "targets": 68,
+          "affected": 33,
+          "versioned": 42,
+          "patched": 9,
+          "were_vulnerable": 42,
+          "fixed": 9,
+          "fixed_24h": 9
+        },
+        {
+          "country_code": "TL",
+          "targets": 254,
+          "affected": 140,
+          "versioned": 146,
+          "patched": 6,
+          "were_vulnerable": 146,
+          "fixed": 6,
+          "fixed_24h": 6
+        },
+        {
+          "country_code": "GI",
+          "targets": 110,
+          "affected": 39,
+          "versioned": 41,
+          "patched": 2,
+          "were_vulnerable": 41,
+          "fixed": 2,
+          "fixed_24h": 2
+        },
+        {
+          "country_code": "MF",
+          "targets": 70,
+          "affected": 56,
+          "versioned": 56,
+          "patched": 0,
+          "were_vulnerable": 56,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "PM",
+          "targets": 22,
+          "affected": 0,
+          "versioned": 0,
+          "patched": 0,
+          "were_vulnerable": 0,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "AT",
+          "targets": 314151,
+          "affected": 150151,
+          "versioned": 243123,
+          "patched": 92972,
+          "were_vulnerable": 238775,
+          "fixed": 88626,
+          "fixed_24h": 87436
+        },
+        {
+          "country_code": "HR",
+          "targets": 20866,
+          "affected": 10355,
+          "versioned": 11039,
+          "patched": 684,
+          "were_vulnerable": 11010,
+          "fixed": 656,
+          "fixed_24h": 619
+        },
+        {
+          "country_code": "AR",
+          "targets": 181370,
+          "affected": 107356,
+          "versioned": 121992,
+          "patched": 14636,
+          "were_vulnerable": 121677,
+          "fixed": 14322,
+          "fixed_24h": 14087
+        },
+        {
+          "country_code": "CL",
+          "targets": 111820,
+          "affected": 41139,
+          "versioned": 43353,
+          "patched": 2214,
+          "were_vulnerable": 43259,
+          "fixed": 2123,
+          "fixed_24h": 2023
+        },
+        {
+          "country_code": "PH",
+          "targets": 17369,
+          "affected": 9543,
+          "versioned": 10024,
+          "patched": 481,
+          "were_vulnerable": 9992,
+          "fixed": 448,
+          "fixed_24h": 430
+        },
+        {
+          "country_code": "PK",
+          "targets": 21624,
+          "affected": 10178,
+          "versioned": 10351,
+          "patched": 173,
+          "were_vulnerable": 10326,
+          "fixed": 148,
+          "fixed_24h": 146
+        },
+        {
+          "country_code": "MV",
+          "targets": 645,
+          "affected": 263,
+          "versioned": 464,
+          "patched": 201,
+          "were_vulnerable": 453,
+          "fixed": 190,
+          "fixed_24h": 163
+        },
+        {
+          "country_code": "JO",
+          "targets": 1532,
+          "affected": 968,
+          "versioned": 996,
+          "patched": 28,
+          "were_vulnerable": 995,
+          "fixed": 27,
+          "fixed_24h": 24
+        },
+        {
+          "country_code": "LK",
+          "targets": 4786,
+          "affected": 3322,
+          "versioned": 3382,
+          "patched": 60,
+          "were_vulnerable": 3382,
+          "fixed": 60,
+          "fixed_24h": 58
+        },
+        {
+          "country_code": "PR",
+          "targets": 1714,
+          "affected": 505,
+          "versioned": 572,
+          "patched": 67,
+          "were_vulnerable": 567,
+          "fixed": 62,
+          "fixed_24h": 55
+        },
+        {
+          "country_code": "ET",
+          "targets": 3749,
+          "affected": 2924,
+          "versioned": 3048,
+          "patched": 124,
+          "were_vulnerable": 3044,
+          "fixed": 120,
+          "fixed_24h": 116
+        },
+        {
+          "country_code": "OM",
+          "targets": 1600,
+          "affected": 612,
+          "versioned": 708,
+          "patched": 96,
+          "were_vulnerable": 707,
+          "fixed": 95,
+          "fixed_24h": 92
+        },
+        {
+          "country_code": "FJ",
+          "targets": 164,
+          "affected": 95,
+          "versioned": 98,
+          "patched": 3,
+          "were_vulnerable": 98,
+          "fixed": 3,
+          "fixed_24h": 3
+        },
+        {
+          "country_code": "VG",
+          "targets": 76,
+          "affected": 45,
+          "versioned": 71,
+          "patched": 26,
+          "were_vulnerable": 69,
+          "fixed": 24,
+          "fixed_24h": 24
+        },
+        {
+          "country_code": "KN",
+          "targets": 21,
+          "affected": 4,
+          "versioned": 4,
+          "patched": 0,
+          "were_vulnerable": 4,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "TK",
+          "targets": 3,
+          "affected": 0,
+          "versioned": 0,
+          "patched": 0,
+          "were_vulnerable": 0,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "HU",
+          "targets": 227097,
+          "affected": 64174,
+          "versioned": 73167,
+          "patched": 8993,
+          "were_vulnerable": 72802,
+          "fixed": 8632,
+          "fixed_24h": 8028
+        },
+        {
+          "country_code": "SI",
+          "targets": 30014,
+          "affected": 14845,
+          "versioned": 17655,
+          "patched": 2810,
+          "were_vulnerable": 17495,
+          "fixed": 2650,
+          "fixed_24h": 2582
+        },
+        {
+          "country_code": "AU",
+          "targets": 978554,
+          "affected": 393792,
+          "versioned": 420134,
+          "patched": 26342,
+          "were_vulnerable": 418460,
+          "fixed": 24685,
+          "fixed_24h": 23555
+        },
+        {
+          "country_code": "PL",
+          "targets": 929312,
+          "affected": 517199,
+          "versioned": 544766,
+          "patched": 27567,
+          "were_vulnerable": 542907,
+          "fixed": 25714,
+          "fixed_24h": 24695
+        },
+        {
+          "country_code": "DK",
+          "targets": 871737,
+          "affected": 342760,
+          "versioned": 787706,
+          "patched": 444946,
+          "were_vulnerable": 763748,
+          "fixed": 420973,
+          "fixed_24h": 388504
+        },
+        {
+          "country_code": "PE",
+          "targets": 20945,
+          "affected": 13932,
+          "versioned": 14355,
+          "patched": 423,
+          "were_vulnerable": 14331,
+          "fixed": 401,
+          "fixed_24h": 379
+        },
+        {
+          "country_code": "MY",
+          "targets": 151951,
+          "affected": 57596,
+          "versioned": 61410,
+          "patched": 3814,
+          "were_vulnerable": 61175,
+          "fixed": 3584,
+          "fixed_24h": 3464
+        },
+        {
+          "country_code": "SN",
+          "targets": 949,
+          "affected": 291,
+          "versioned": 441,
+          "patched": 150,
+          "were_vulnerable": 436,
+          "fixed": 145,
+          "fixed_24h": 143
+        },
+        {
+          "country_code": "HN",
+          "targets": 2968,
+          "affected": 1280,
+          "versioned": 1356,
+          "patched": 76,
+          "were_vulnerable": 1355,
+          "fixed": 75,
+          "fixed_24h": 71
+        },
+        {
+          "country_code": "SM",
+          "targets": 373,
+          "affected": 231,
+          "versioned": 249,
+          "patched": 18,
+          "were_vulnerable": 248,
+          "fixed": 17,
+          "fixed_24h": 15
+        },
+        {
+          "country_code": "YE",
+          "targets": 162,
+          "affected": 76,
+          "versioned": 76,
+          "patched": 0,
+          "were_vulnerable": 76,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "BT",
+          "targets": 1385,
+          "affected": 227,
+          "versioned": 284,
+          "patched": 57,
+          "were_vulnerable": 278,
+          "fixed": 53,
+          "fixed_24h": 53
+        },
+        {
+          "country_code": "MZ",
+          "targets": 1010,
+          "affected": 388,
+          "versioned": 399,
+          "patched": 11,
+          "were_vulnerable": 399,
+          "fixed": 11,
+          "fixed_24h": 11
+        },
+        {
+          "country_code": "SL",
+          "targets": 89,
+          "affected": 28,
+          "versioned": 29,
+          "patched": 1,
+          "were_vulnerable": 29,
+          "fixed": 1,
+          "fixed_24h": 1
+        },
+        {
+          "country_code": "KM",
+          "targets": 56,
+          "affected": 26,
+          "versioned": 26,
+          "patched": 0,
+          "were_vulnerable": 26,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "VA",
+          "targets": 3,
+          "affected": 2,
+          "versioned": 2,
+          "patched": 0,
+          "were_vulnerable": 2,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "MS",
+          "targets": 5,
+          "affected": 4,
+          "versioned": 4,
+          "patched": 0,
+          "were_vulnerable": 4,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "BR",
+          "targets": 2134492,
+          "affected": 601389,
+          "versioned": 637943,
+          "patched": 36554,
+          "were_vulnerable": 636192,
+          "fixed": 34831,
+          "fixed_24h": 33908
+        },
+        {
+          "country_code": "BE",
+          "targets": 267954,
+          "affected": 50237,
+          "versioned": 61655,
+          "patched": 11418,
+          "were_vulnerable": 61084,
+          "fixed": 10849,
+          "fixed_24h": 10079
+        },
+        {
+          "country_code": "GB",
+          "targets": 2135327,
+          "affected": 1145060,
+          "versioned": 1448463,
+          "patched": 303403,
+          "were_vulnerable": 1436753,
+          "fixed": 292242,
+          "fixed_24h": 281602
+        },
+        {
+          "country_code": "GR",
+          "targets": 36641,
+          "affected": 16396,
+          "versioned": 19264,
+          "patched": 2868,
+          "were_vulnerable": 19078,
+          "fixed": 2686,
+          "fixed_24h": 2325
+        },
+        {
+          "country_code": "DZ",
+          "targets": 24251,
+          "affected": 21366,
+          "versioned": 21496,
+          "patched": 130,
+          "were_vulnerable": 21483,
+          "fixed": 117,
+          "fixed_24h": 112
+        },
+        {
+          "country_code": "KE",
+          "targets": 10013,
+          "affected": 5334,
+          "versioned": 5515,
+          "patched": 181,
+          "were_vulnerable": 5505,
+          "fixed": 171,
+          "fixed_24h": 167
+        },
+        {
+          "country_code": "MT",
+          "targets": 866,
+          "affected": 382,
+          "versioned": 449,
+          "patched": 67,
+          "were_vulnerable": 442,
+          "fixed": 60,
+          "fixed_24h": 60
+        },
+        {
+          "country_code": "BI",
+          "targets": 169,
+          "affected": 83,
+          "versioned": 84,
+          "patched": 1,
+          "were_vulnerable": 84,
+          "fixed": 1,
+          "fixed_24h": 1
+        },
+        {
+          "country_code": "HT",
+          "targets": 183,
+          "affected": 87,
+          "versioned": 87,
+          "patched": 0,
+          "were_vulnerable": 87,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "SY",
+          "targets": 2890,
+          "affected": 2161,
+          "versioned": 2321,
+          "patched": 160,
+          "were_vulnerable": 2317,
+          "fixed": 156,
+          "fixed_24h": 155
+        },
+        {
+          "country_code": "CF",
+          "targets": 10,
+          "affected": 5,
+          "versioned": 7,
+          "patched": 2,
+          "were_vulnerable": 7,
+          "fixed": 2,
+          "fixed_24h": 2
+        },
+        {
+          "country_code": "VU",
+          "targets": 52,
+          "affected": 32,
+          "versioned": 32,
+          "patched": 0,
+          "were_vulnerable": 32,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "AW",
+          "targets": 75,
+          "affected": 28,
+          "versioned": 28,
+          "patched": 0,
+          "were_vulnerable": 28,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "FM",
+          "targets": 50,
+          "affected": 44,
+          "versioned": 46,
+          "patched": 2,
+          "were_vulnerable": 46,
+          "fixed": 2,
+          "fixed_24h": 2
+        },
+        {
+          "country_code": "DM",
+          "targets": 17,
+          "affected": 7,
+          "versioned": 7,
+          "patched": 0,
+          "were_vulnerable": 7,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "TV",
+          "targets": 3,
+          "affected": 3,
+          "versioned": 3,
+          "patched": 0,
+          "were_vulnerable": 3,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "IR",
+          "targets": 691118,
+          "affected": 337375,
+          "versioned": 344321,
+          "patched": 6946,
+          "were_vulnerable": 344150,
+          "fixed": 6771,
+          "fixed_24h": 6693
+        },
+        {
+          "country_code": "CN",
+          "targets": 1246260,
+          "affected": 449759,
+          "versioned": 459587,
+          "patched": 9828,
+          "were_vulnerable": 458819,
+          "fixed": 9082,
+          "fixed_24h": 8870
+        },
+        {
+          "country_code": "VN",
+          "targets": 594667,
+          "affected": 401747,
+          "versioned": 423739,
+          "patched": 21992,
+          "were_vulnerable": 423142,
+          "fixed": 21399,
+          "fixed_24h": 21321
+        },
+        {
+          "country_code": "GG",
+          "targets": 60,
+          "affected": 6,
+          "versioned": 11,
+          "patched": 5,
+          "were_vulnerable": 10,
+          "fixed": 4,
+          "fixed_24h": 4
+        },
+        {
+          "country_code": "MD",
+          "targets": 44516,
+          "affected": 25225,
+          "versioned": 25649,
+          "patched": 424,
+          "were_vulnerable": 25629,
+          "fixed": 404,
+          "fixed_24h": 382
+        },
+        {
+          "country_code": "PS",
+          "targets": 3723,
+          "affected": 2823,
+          "versioned": 2921,
+          "patched": 98,
+          "were_vulnerable": 2918,
+          "fixed": 95,
+          "fixed_24h": 95
+        },
+        {
+          "country_code": "EC",
+          "targets": 10556,
+          "affected": 6845,
+          "versioned": 7159,
+          "patched": 314,
+          "were_vulnerable": 7136,
+          "fixed": 292,
+          "fixed_24h": 267
+        },
+        {
+          "country_code": "GE",
+          "targets": 14450,
+          "affected": 4858,
+          "versioned": 5182,
+          "patched": 324,
+          "were_vulnerable": 5178,
+          "fixed": 320,
+          "fixed_24h": 307
+        },
+        {
+          "country_code": "SV",
+          "targets": 1612,
+          "affected": 1227,
+          "versioned": 1276,
+          "patched": 49,
+          "were_vulnerable": 1270,
+          "fixed": 43,
+          "fixed_24h": 41
+        },
+        {
+          "country_code": "AL",
+          "targets": 2364,
+          "affected": 1052,
+          "versioned": 1133,
+          "patched": 81,
+          "were_vulnerable": 1124,
+          "fixed": 72,
+          "fixed_24h": 72
+        },
+        {
+          "country_code": "XK",
+          "targets": 570,
+          "affected": 229,
+          "versioned": 252,
+          "patched": 23,
+          "were_vulnerable": 252,
+          "fixed": 23,
+          "fixed_24h": 23
+        },
+        {
+          "country_code": "LB",
+          "targets": 1300,
+          "affected": 623,
+          "versioned": 647,
+          "patched": 24,
+          "were_vulnerable": 647,
+          "fixed": 24,
+          "fixed_24h": 22
+        },
+        {
+          "country_code": "ZW",
+          "targets": 1122,
+          "affected": 419,
+          "versioned": 431,
+          "patched": 12,
+          "were_vulnerable": 431,
+          "fixed": 12,
+          "fixed_24h": 12
+        },
+        {
+          "country_code": "BF",
+          "targets": 657,
+          "affected": 373,
+          "versioned": 390,
+          "patched": 17,
+          "were_vulnerable": 390,
+          "fixed": 17,
+          "fixed_24h": 17
+        },
+        {
+          "country_code": "WS",
+          "targets": 181,
+          "affected": 78,
+          "versioned": 107,
+          "patched": 29,
+          "were_vulnerable": 107,
+          "fixed": 29,
+          "fixed_24h": 29
+        },
+        {
+          "country_code": "GN",
+          "targets": 94,
+          "affected": 39,
+          "versioned": 41,
+          "patched": 2,
+          "were_vulnerable": 41,
+          "fixed": 2,
+          "fixed_24h": 2
+        },
+        {
+          "country_code": "AI",
+          "targets": 5,
+          "affected": 0,
+          "versioned": 0,
+          "patched": 0,
+          "were_vulnerable": 0,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "NR",
+          "targets": 4,
+          "affected": 4,
+          "versioned": 4,
+          "patched": 0,
+          "were_vulnerable": 4,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "IT",
+          "targets": 654321,
+          "affected": 293914,
+          "versioned": 336405,
+          "patched": 42491,
+          "were_vulnerable": 333967,
+          "fixed": 40061,
+          "fixed_24h": 37001
+        },
+        {
+          "country_code": "IE",
+          "targets": 314904,
+          "affected": 163813,
+          "versioned": 180381,
+          "patched": 16568,
+          "were_vulnerable": 178986,
+          "fixed": 15180,
+          "fixed_24h": 14132
+        },
+        {
+          "country_code": "IL",
+          "targets": 91171,
+          "affected": 47301,
+          "versioned": 59831,
+          "patched": 12530,
+          "were_vulnerable": 58930,
+          "fixed": 11630,
+          "fixed_24h": 10535
+        },
+        {
+          "country_code": "BH",
+          "targets": 1885,
+          "affected": 718,
+          "versioned": 731,
+          "patched": 13,
+          "were_vulnerable": 731,
+          "fixed": 13,
+          "fixed_24h": 13
+        },
+        {
+          "country_code": "KY",
+          "targets": 108,
+          "affected": 23,
+          "versioned": 54,
+          "patched": 31,
+          "were_vulnerable": 50,
+          "fixed": 27,
+          "fixed_24h": 26
+        },
+        {
+          "country_code": "UZ",
+          "targets": 17783,
+          "affected": 10763,
+          "versioned": 11480,
+          "patched": 717,
+          "were_vulnerable": 11460,
+          "fixed": 697,
+          "fixed_24h": 689
+        },
+        {
+          "country_code": "QA",
+          "targets": 1766,
+          "affected": 451,
+          "versioned": 552,
+          "patched": 101,
+          "were_vulnerable": 550,
+          "fixed": 99,
+          "fixed_24h": 98
+        },
+        {
+          "country_code": "JM",
+          "targets": 491,
+          "affected": 179,
+          "versioned": 199,
+          "patched": 20,
+          "were_vulnerable": 198,
+          "fixed": 19,
+          "fixed_24h": 18
+        },
+        {
+          "country_code": "GT",
+          "targets": 2927,
+          "affected": 1796,
+          "versioned": 1861,
+          "patched": 65,
+          "were_vulnerable": 1853,
+          "fixed": 57,
+          "fixed_24h": 55
+        },
+        {
+          "country_code": "KI",
+          "targets": 7,
+          "affected": 4,
+          "versioned": 4,
+          "patched": 0,
+          "were_vulnerable": 4,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "CM",
+          "targets": 1480,
+          "affected": 637,
+          "versioned": 641,
+          "patched": 4,
+          "were_vulnerable": 641,
+          "fixed": 4,
+          "fixed_24h": 4
+        },
+        {
+          "country_code": "PY",
+          "targets": 6202,
+          "affected": 3614,
+          "versioned": 4271,
+          "patched": 657,
+          "were_vulnerable": 4263,
+          "fixed": 649,
+          "fixed_24h": 641
+        },
+        {
+          "country_code": "BJ",
+          "targets": 877,
+          "affected": 240,
+          "versioned": 373,
+          "patched": 133,
+          "were_vulnerable": 371,
+          "fixed": 131,
+          "fixed_24h": 129
+        },
+        {
+          "country_code": "ZM",
+          "targets": 1425,
+          "affected": 476,
+          "versioned": 504,
+          "patched": 28,
+          "were_vulnerable": 504,
+          "fixed": 28,
+          "fixed_24h": 28
+        },
+        {
+          "country_code": "BZ",
+          "targets": 23910,
+          "affected": 3610,
+          "versioned": 3753,
+          "patched": 143,
+          "were_vulnerable": 3748,
+          "fixed": 138,
+          "fixed_24h": 138
+        },
+        {
+          "country_code": "GQ",
+          "targets": 79,
+          "affected": 50,
+          "versioned": 50,
+          "patched": 0,
+          "were_vulnerable": 50,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "FI",
+          "targets": 709397,
+          "affected": 329952,
+          "versioned": 433775,
+          "patched": 103823,
+          "were_vulnerable": 429637,
+          "fixed": 99692,
+          "fixed_24h": 92018
+        },
+        {
+          "country_code": "NL",
+          "targets": 2844218,
+          "affected": 1749812,
+          "versioned": 1936662,
+          "patched": 186850,
+          "were_vulnerable": 1923029,
+          "fixed": 173261,
+          "fixed_24h": 164023
+        },
+        {
+          "country_code": "CH",
+          "targets": 293416,
+          "affected": 71384,
+          "versioned": 94645,
+          "patched": 23261,
+          "were_vulnerable": 93371,
+          "fixed": 21994,
+          "fixed_24h": 20791
+        },
+        {
+          "country_code": "ZA",
+          "targets": 167898,
+          "affected": 97215,
+          "versioned": 105896,
+          "patched": 8681,
+          "were_vulnerable": 105318,
+          "fixed": 8105,
+          "fixed_24h": 7829
+        },
+        {
+          "country_code": "KR",
+          "targets": 1158815,
+          "affected": 480364,
+          "versioned": 494500,
+          "patched": 14136,
+          "were_vulnerable": 493553,
+          "fixed": 13220,
+          "fixed_24h": 12702
+        },
+        {
+          "country_code": "TH",
+          "targets": 184756,
+          "affected": 93765,
+          "versioned": 104121,
+          "patched": 10356,
+          "were_vulnerable": 102274,
+          "fixed": 8509,
+          "fixed_24h": 8219
+        },
+        {
+          "country_code": "BG",
+          "targets": 221145,
+          "affected": 81470,
+          "versioned": 148694,
+          "patched": 67224,
+          "were_vulnerable": 146167,
+          "fixed": 64701,
+          "fixed_24h": 61631
+        },
+        {
+          "country_code": "AD",
+          "targets": 331,
+          "affected": 106,
+          "versioned": 191,
+          "patched": 85,
+          "were_vulnerable": 190,
+          "fixed": 84,
+          "fixed_24h": 81
+        },
+        {
+          "country_code": "BA",
+          "targets": 5849,
+          "affected": 2579,
+          "versioned": 3080,
+          "patched": 501,
+          "were_vulnerable": 3073,
+          "fixed": 495,
+          "fixed_24h": 467
+        },
+        {
+          "country_code": "LY",
+          "targets": 9547,
+          "affected": 8403,
+          "versioned": 8836,
+          "patched": 433,
+          "were_vulnerable": 8475,
+          "fixed": 72,
+          "fixed_24h": 58
+        },
+        {
+          "country_code": "MM",
+          "targets": 1537,
+          "affected": 993,
+          "versioned": 1032,
+          "patched": 39,
+          "were_vulnerable": 1028,
+          "fixed": 36,
+          "fixed_24h": 34
+        },
+        {
+          "country_code": "ML",
+          "targets": 327,
+          "affected": 184,
+          "versioned": 187,
+          "patched": 3,
+          "were_vulnerable": 187,
+          "fixed": 3,
+          "fixed_24h": 3
+        },
+        {
+          "country_code": "CV",
+          "targets": 510,
+          "affected": 268,
+          "versioned": 276,
+          "patched": 8,
+          "were_vulnerable": 276,
+          "fixed": 8,
+          "fixed_24h": 8
+        },
+        {
+          "country_code": "SX",
+          "targets": 13,
+          "affected": 7,
+          "versioned": 7,
+          "patched": 0,
+          "were_vulnerable": 7,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "CG",
+          "targets": 73,
+          "affected": 16,
+          "versioned": 23,
+          "patched": 7,
+          "were_vulnerable": 22,
+          "fixed": 6,
+          "fixed_24h": 5
+        },
+        {
+          "country_code": "AX",
+          "targets": 124,
+          "affected": 58,
+          "versioned": 86,
+          "patched": 28,
+          "were_vulnerable": 86,
+          "fixed": 28,
+          "fixed_24h": 26
+        },
+        {
+          "country_code": "TO",
+          "targets": 104,
+          "affected": 18,
+          "versioned": 18,
+          "patched": 0,
+          "were_vulnerable": 18,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "CK",
+          "targets": 9,
+          "affected": 1,
+          "versioned": 1,
+          "patched": 0,
+          "were_vulnerable": 1,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "GL",
+          "targets": 38,
+          "affected": 3,
+          "versioned": 4,
+          "patched": 1,
+          "were_vulnerable": 4,
+          "fixed": 1,
+          "fixed_24h": 1
+        },
+        {
+          "country_code": "BQ",
+          "targets": 13,
+          "affected": 5,
+          "versioned": 5,
+          "patched": 0,
+          "were_vulnerable": 5,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "LT",
+          "targets": 45734,
+          "affected": 26463,
+          "versioned": 27445,
+          "patched": 982,
+          "were_vulnerable": 27388,
+          "fixed": 926,
+          "fixed_24h": 882
+        },
+        {
+          "country_code": "RE",
+          "targets": 893,
+          "affected": 316,
+          "versioned": 421,
+          "patched": 105,
+          "were_vulnerable": 413,
+          "fixed": 96,
+          "fixed_24h": 95
+        },
+        {
+          "country_code": "KW",
+          "targets": 948,
+          "affected": 436,
+          "versioned": 503,
+          "patched": 67,
+          "were_vulnerable": 498,
+          "fixed": 62,
+          "fixed_24h": 61
+        },
+        {
+          "country_code": "BY",
+          "targets": 63554,
+          "affected": 35749,
+          "versioned": 38172,
+          "patched": 2423,
+          "were_vulnerable": 38115,
+          "fixed": 2423,
+          "fixed_24h": 2398
+        },
+        {
+          "country_code": "BN",
+          "targets": 162,
+          "affected": 101,
+          "versioned": 103,
+          "patched": 2,
+          "were_vulnerable": 103,
+          "fixed": 2,
+          "fixed_24h": 1
+        },
+        {
+          "country_code": "AM",
+          "targets": 4816,
+          "affected": 2515,
+          "versioned": 2567,
+          "patched": 52,
+          "were_vulnerable": 2567,
+          "fixed": 52,
+          "fixed_24h": 50
+        },
+        {
+          "country_code": "NC",
+          "targets": 773,
+          "affected": 142,
+          "versioned": 273,
+          "patched": 131,
+          "were_vulnerable": 270,
+          "fixed": 128,
+          "fixed_24h": 121
+        },
+        {
+          "country_code": "SA",
+          "targets": 13497,
+          "affected": 2820,
+          "versioned": 3440,
+          "patched": 620,
+          "were_vulnerable": 3427,
+          "fixed": 607,
+          "fixed_24h": 584
+        },
+        {
+          "country_code": "BW",
+          "targets": 850,
+          "affected": 496,
+          "versioned": 504,
+          "patched": 8,
+          "were_vulnerable": 504,
+          "fixed": 8,
+          "fixed_24h": 8
+        },
+        {
+          "country_code": "MG",
+          "targets": 991,
+          "affected": 540,
+          "versioned": 551,
+          "patched": 11,
+          "were_vulnerable": 550,
+          "fixed": 10,
+          "fixed_24h": 10
+        },
+        {
+          "country_code": "AO",
+          "targets": 1063,
+          "affected": 458,
+          "versioned": 484,
+          "patched": 26,
+          "were_vulnerable": 481,
+          "fixed": 23,
+          "fixed_24h": 23
+        },
+        {
+          "country_code": "SB",
+          "targets": 98,
+          "affected": 21,
+          "versioned": 25,
+          "patched": 4,
+          "were_vulnerable": 25,
+          "fixed": 4,
+          "fixed_24h": 4
+        },
+        {
+          "country_code": "SR",
+          "targets": 1098,
+          "affected": 169,
+          "versioned": 174,
+          "patched": 5,
+          "were_vulnerable": 172,
+          "fixed": 3,
+          "fixed_24h": 3
+        },
+        {
+          "country_code": "BM",
+          "targets": 49,
+          "affected": 18,
+          "versioned": 29,
+          "patched": 11,
+          "were_vulnerable": 29,
+          "fixed": 11,
+          "fixed_24h": 10
+        },
+        {
+          "country_code": "YT",
+          "targets": 28,
+          "affected": 8,
+          "versioned": 8,
+          "patched": 0,
+          "were_vulnerable": 8,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "WF",
+          "targets": 8,
+          "affected": 3,
+          "versioned": 3,
+          "patched": 0,
+          "were_vulnerable": 3,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "GD",
+          "targets": 25,
+          "affected": 14,
+          "versioned": 14,
+          "patched": 0,
+          "were_vulnerable": 14,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "KP",
+          "targets": 51,
+          "affected": 48,
+          "versioned": 48,
+          "patched": 0,
+          "were_vulnerable": 48,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "VI",
+          "targets": 89,
+          "affected": 61,
+          "versioned": 61,
+          "patched": 0,
+          "were_vulnerable": 61,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "GU",
+          "targets": 66,
+          "affected": 23,
+          "versioned": 26,
+          "patched": 3,
+          "were_vulnerable": 25,
+          "fixed": 2,
+          "fixed_24h": 2
+        },
+        {
+          "country_code": "MP",
+          "targets": 1,
+          "affected": 1,
+          "versioned": 1,
+          "patched": 0,
+          "were_vulnerable": 1,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "UA",
+          "targets": 251127,
+          "affected": 158201,
+          "versioned": 164224,
+          "patched": 6023,
+          "were_vulnerable": 164005,
+          "fixed": 5892,
+          "fixed_24h": 5682
+        },
+        {
+          "country_code": "LU",
+          "targets": 18523,
+          "affected": 11263,
+          "versioned": 13928,
+          "patched": 2665,
+          "were_vulnerable": 13808,
+          "fixed": 2545,
+          "fixed_24h": 2395
+        },
+        {
+          "country_code": "NO",
+          "targets": 112729,
+          "affected": 45059,
+          "versioned": 86371,
+          "patched": 41312,
+          "were_vulnerable": 84221,
+          "fixed": 39158,
+          "fixed_24h": 37744
+        },
+        {
+          "country_code": "SE",
+          "targets": 1371936,
+          "affected": 961113,
+          "versioned": 1280056,
+          "patched": 318943,
+          "were_vulnerable": 1242933,
+          "fixed": 281826,
+          "fixed_24h": 260701
+        },
+        {
+          "country_code": "EE",
+          "targets": 103982,
+          "affected": 24502,
+          "versioned": 29728,
+          "patched": 5226,
+          "were_vulnerable": 29382,
+          "fixed": 4893,
+          "fixed_24h": 4283
+        },
+        {
+          "country_code": "LV",
+          "targets": 69417,
+          "affected": 51323,
+          "versioned": 53031,
+          "patched": 1708,
+          "were_vulnerable": 52922,
+          "fixed": 1600,
+          "fixed_24h": 1489
+        },
+        {
+          "country_code": "SK",
+          "targets": 104598,
+          "affected": 19057,
+          "versioned": 25677,
+          "patched": 6620,
+          "were_vulnerable": 25515,
+          "fixed": 6459,
+          "fixed_24h": 6176
+        },
+        {
+          "country_code": "DO",
+          "targets": 3220,
+          "affected": 2372,
+          "versioned": 2454,
+          "patched": 82,
+          "were_vulnerable": 2450,
+          "fixed": 78,
+          "fixed_24h": 62
+        },
+        {
+          "country_code": "MA",
+          "targets": 8186,
+          "affected": 6206,
+          "versioned": 6290,
+          "patched": 84,
+          "were_vulnerable": 6286,
+          "fixed": 80,
+          "fixed_24h": 79
+        },
+        {
+          "country_code": "LA",
+          "targets": 896,
+          "affected": 502,
+          "versioned": 508,
+          "patched": 6,
+          "were_vulnerable": 508,
+          "fixed": 6,
+          "fixed_24h": 6
+        },
+        {
+          "country_code": "NI",
+          "targets": 639,
+          "affected": 376,
+          "versioned": 382,
+          "patched": 6,
+          "were_vulnerable": 382,
+          "fixed": 7,
+          "fixed_24h": 5
+        },
+        {
+          "country_code": "CU",
+          "targets": 946,
+          "affected": 253,
+          "versioned": 270,
+          "patched": 17,
+          "were_vulnerable": 270,
+          "fixed": 16,
+          "fixed_24h": 13
+        },
+        {
+          "country_code": "CI",
+          "targets": 1756,
+          "affected": 1043,
+          "versioned": 1052,
+          "patched": 9,
+          "were_vulnerable": 1052,
+          "fixed": 9,
+          "fixed_24h": 9
+        },
+        {
+          "country_code": "DJ",
+          "targets": 47,
+          "affected": 20,
+          "versioned": 21,
+          "patched": 1,
+          "were_vulnerable": 21,
+          "fixed": 1,
+          "fixed_24h": 1
+        },
+        {
+          "country_code": "IQ",
+          "targets": 1288,
+          "affected": 603,
+          "versioned": 757,
+          "patched": 154,
+          "were_vulnerable": 745,
+          "fixed": 142,
+          "fixed_24h": 142
+        },
+        {
+          "country_code": "AS",
+          "targets": 31,
+          "affected": 23,
+          "versioned": 23,
+          "patched": 0,
+          "were_vulnerable": 23,
+          "fixed": 0,
+          "fixed_24h": 0
+        },
+        {
+          "country_code": "GW",
+          "targets": 23,
+          "affected": 18,
+          "versioned": 18,
+          "patched": 0,
+          "were_vulnerable": 18,
+          "fixed": 0,
+          "fixed_24h": 0
+        }
+      ],
+      "asns": [
+        {
+          "asn": 13335,
+          "as_name": "Cloudflare, Inc.",
+          "targets": 6786963,
+          "affected": 1732515,
+          "affected_nofix": 1716448,
+          "patched": 1374561,
+          "unknown": 1963439
+        },
+        {
+          "asn": 16276,
+          "as_name": "OVH SAS",
+          "targets": 4634314,
+          "affected": 220444,
+          "affected_nofix": 1974350,
+          "patched": 185623,
+          "unknown": 2253897
+        },
+        {
+          "asn": 25504,
+          "as_name": "Vautron Rechenzentrum AG",
+          "targets": 1763660,
+          "affected": 1110,
+          "affected_nofix": 1731727,
+          "patched": 3538,
+          "unknown": 27285
+        },
+        {
+          "asn": 47583,
+          "as_name": "Hostinger International Limited",
+          "targets": 1358796,
+          "affected": 1090199,
+          "affected_nofix": 259623,
+          "patched": 555,
+          "unknown": 8419
+        },
+        {
+          "asn": 16509,
+          "as_name": "Amazon.com, Inc.",
+          "targets": 3586516,
+          "affected": 245793,
+          "affected_nofix": 885606,
+          "patched": 167875,
+          "unknown": 2287242
+        },
+        {
+          "asn": 39570,
+          "as_name": "Loopia AB",
+          "targets": 1194667,
+          "affected": 887532,
+          "affected_nofix": 12,
+          "patched": 305752,
+          "unknown": 1371
+        },
+        {
+          "asn": 24940,
+          "as_name": "Hetzner Online GmbH",
+          "targets": 2566223,
+          "affected": 339555,
+          "affected_nofix": 541562,
+          "patched": 303143,
+          "unknown": 1381963
+        },
+        {
+          "asn": 12148,
+          "as_name": "Clemson University",
+          "targets": 860261,
+          "affected": 858789,
+          "affected_nofix": 17,
+          "patched": 21,
+          "unknown": 1434
+        },
+        {
+          "asn": 22612,
+          "as_name": "Namecheap, Inc.",
+          "targets": 1163890,
+          "affected": 305838,
+          "affected_nofix": 512293,
+          "patched": 18245,
+          "unknown": 327514
+        },
+        {
+          "asn": 50245,
+          "as_name": "Serverel Inc.",
+          "targets": 764762,
+          "affected": 172,
+          "affected_nofix": 764098,
+          "patched": 201,
+          "unknown": 291
+        },
+        {
+          "asn": 6724,
+          "as_name": "Strato GmbH",
+          "targets": 1517401,
+          "affected": 368997,
+          "affected_nofix": 365673,
+          "patched": 739401,
+          "unknown": 43330
+        },
+        {
+          "asn": 8560,
+          "as_name": "IONOS SE",
+          "targets": 1563880,
+          "affected": 202954,
+          "affected_nofix": 409491,
+          "patched": 573663,
+          "unknown": 377772
+        },
+        {
+          "asn": 198610,
+          "as_name": "Beget LLC",
+          "targets": 954213,
+          "affected": 99319,
+          "affected_nofix": 460539,
+          "patched": 304024,
+          "unknown": 90331
+        },
+        {
+          "asn": 7506,
+          "as_name": "GMO Internet, Inc.",
+          "targets": 684935,
+          "affected": 210409,
+          "affected_nofix": 335147,
+          "patched": 88487,
+          "unknown": 50892
+        },
+        {
+          "asn": 48254,
+          "as_name": "20i Limited",
+          "targets": 612364,
+          "affected": 187375,
+          "affected_nofix": 320267,
+          "patched": 101272,
+          "unknown": 3450
+        }
+      ],
+      "top_versions": [
+        {
+          "version": "7.4.33",
+          "status": "affected_nofix",
+          "targets": 6391111
+        },
+        {
+          "version": "8.3.36",
+          "status": "patched",
+          "targets": 2384139
+        },
+        {
+          "version": "8.3.35",
+          "status": "affected",
+          "targets": 2276444
+        },
+        {
+          "version": "8.1.34",
+          "status": "affected_nofix",
+          "targets": 2044416
+        },
+        {
+          "version": "8.2.34",
+          "status": "affected",
+          "targets": 1837751
+        },
+        {
+          "version": "8.2.35",
+          "status": "patched",
+          "targets": 1688709
+        },
+        {
+          "version": "8.5.12",
+          "status": "patched",
+          "targets": 1577757
+        },
+        {
+          "version": "5.2.6",
+          "status": "affected_nofix",
+          "targets": 1557973
+        },
+        {
+          "version": "5.6.40",
+          "status": "affected_nofix",
+          "targets": 1519067
+        },
+        {
+          "version": "8.4.27",
+          "status": "patched",
+          "targets": 1363943
+        },
+        {
+          "version": "8.0.30",
+          "status": "affected_nofix",
+          "targets": 1157425
+        },
+        {
+          "version": "8.2.33",
+          "status": "affected",
+          "targets": 1079068
+        },
+        {
+          "version": "7.2.24",
+          "status": "affected_nofix",
+          "targets": 1011093
+        },
+        {
+          "version": "7.2.34",
+          "status": "affected_nofix",
+          "targets": 950047
+        },
+        {
+          "version": "8.4.26",
+          "status": "affected",
+          "targets": 947741
+        },
+        {
+          "version": "8.3.8",
+          "status": "affected",
+          "targets": 935114
+        },
+        {
+          "version": "8.3.33",
+          "status": "affected",
+          "targets": 732108
+        },
+        {
+          "version": "7.3.33",
+          "status": "affected_nofix",
+          "targets": 665505
+        },
+        {
+          "version": "5.4.16",
+          "status": "affected_nofix",
+          "targets": 553192
+        },
+        {
+          "version": "7.4",
+          "status": "affected_nofix",
+          "targets": 465759
+        }
+      ],
+      "history": [
+        {
+          "day": "2026-10-21",
+          "status": "affected",
+          "targets": 17024188
+        },
+        {
+          "day": "2026-10-21",
+          "status": "affected_nofix",
+          "targets": 23311748
+        },
+        {
+          "day": "2026-10-21",
+          "status": "patched",
+          "targets": 401561
+        },
+        {
+          "day": "2026-10-21",
+          "status": "unknown",
+          "targets": 16167585
+        },
+        {
+          "day": "2026-10-22",
+          "status": "affected",
+          "targets": 13397264
+        },
+        {
+          "day": "2026-10-22",
+          "status": "affected_nofix",
+          "targets": 23336842
+        },
+        {
+          "day": "2026-10-22",
+          "status": "patched",
+          "targets": 4936430
+        },
+        {
+          "day": "2026-10-22",
+          "status": "unknown",
+          "targets": 19715918
+        },
+        {
+          "day": "2026-10-23",
+          "status": "affected",
+          "targets": 11522684
+        },
+        {
+          "day": "2026-10-23",
+          "status": "affected_nofix",
+          "targets": 23274613
+        },
+        {
+          "day": "2026-10-23",
+          "status": "patched",
+          "targets": 7018025
+        },
+        {
+          "day": "2026-10-23",
+          "status": "unknown",
+          "targets": 42653935
+        }
+      ],
+      "branch_history": [
+        {
+          "day": "2026-10-21",
+          "branch": "8.2",
+          "patched": 113939,
+          "targets": 5315086
+        },
+        {
+          "day": "2026-10-21",
+          "branch": "8.3",
+          "patched": 121448,
+          "targets": 6896112
+        },
+        {
+          "day": "2026-10-21",
+          "branch": "8.4",
+          "patched": 120743,
+          "targets": 2784890
+        },
+        {
+          "day": "2026-10-21",
+          "branch": "8.5",
+          "patched": 45431,
+          "targets": 2429661
+        },
+        {
+          "day": "2026-10-22",
+          "branch": "8.3",
+          "patched": 1705588,
+          "targets": 7177861
+        },
+        {
+          "day": "2026-10-22",
+          "branch": "8.4",
+          "patched": 1027238,
+          "targets": 2910999
+        },
+        {
+          "day": "2026-10-22",
+          "branch": "8.2",
+          "patched": 1219271,
+          "targets": 5516696
+        },
+        {
+          "day": "2026-10-22",
+          "branch": "8.5",
+          "patched": 983600,
+          "targets": 2727405
+        },
+        {
+          "day": "2026-10-23",
+          "branch": "8.3",
+          "patched": 2384986,
+          "targets": 7213840
+        },
+        {
+          "day": "2026-10-23",
+          "branch": "8.4",
+          "patched": 1364974,
+          "targets": 2944489
+        },
+        {
+          "day": "2026-10-23",
+          "branch": "8.2",
+          "patched": 1689400,
+          "targets": 5584001
+        },
+        {
+          "day": "2026-10-23",
+          "branch": "8.5",
+          "patched": 1577887,
+          "targets": 2797601
+        }
+      ],
+      "branch_versions": [
+        {
+          "branch": "8.2",
+          "version": "8.2.10",
+          "targets": 7763
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.13",
+          "targets": 14355
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.20",
+          "targets": 27742
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.25",
+          "targets": 18004
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.31",
+          "targets": 140159
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.4",
+          "targets": 5977
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.12",
+          "targets": 29020
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.4",
+          "targets": 4689
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.8",
+          "targets": 6566
+        },
+        {
+          "branch": "8.5",
+          "version": "8.5.3",
+          "targets": 442993
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.2",
+          "targets": 1238
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.9",
+          "targets": 4782
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.13",
+          "targets": 7330
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.17",
+          "targets": 29247
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.33",
+          "targets": 732108
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.15",
+          "targets": 12995
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.23",
+          "targets": 31349
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.31",
+          "targets": 66553
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.7",
+          "targets": 9120
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.24",
+          "targets": 94891
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.3",
+          "targets": 3605
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.9",
+          "targets": 115
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.11",
+          "targets": 7372
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.25",
+          "targets": 12388
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.28",
+          "targets": 113108
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.29",
+          "targets": 102202
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.34",
+          "targets": 1837751
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.35",
+          "targets": 1688709
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.10",
+          "targets": 12445
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.14",
+          "targets": 12888
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.24",
+          "targets": 17385
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.22",
+          "targets": 29058
+        },
+        {
+          "branch": "8.5",
+          "version": "8.5.11",
+          "targets": 455843
+        },
+        {
+          "branch": "8.5",
+          "version": "8.5.12",
+          "targets": 1577757
+        },
+        {
+          "branch": "8.5",
+          "version": "8.5.9",
+          "targets": 137686
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.14",
+          "targets": 9056
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.22",
+          "targets": 5940
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.7",
+          "targets": 25875
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.2",
+          "targets": 5576
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.34",
+          "targets": 406
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.9",
+          "targets": 10678
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.18",
+          "targets": 14613
+        },
+        {
+          "branch": "8.5",
+          "version": "8.5.6",
+          "targets": 15713
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.0",
+          "targets": 13995
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.19",
+          "targets": 59365
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.20",
+          "targets": 23979
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.26",
+          "targets": 947741
+        },
+        {
+          "branch": "8.5",
+          "version": "8.5.8",
+          "targets": 20941
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.0",
+          "targets": 11543
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.12",
+          "targets": 100431
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.27",
+          "targets": 33959
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.36",
+          "targets": 2384139
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.0",
+          "targets": 662
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.28",
+          "targets": 614
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.6",
+          "targets": 24979
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.7",
+          "targets": 30448
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.18",
+          "targets": 10045
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.23",
+          "targets": 13507
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.3",
+          "targets": 4582
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.32",
+          "targets": 33887
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.37",
+          "targets": 340
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.5",
+          "targets": 6293
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.12",
+          "targets": 10052
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.21",
+          "targets": 41569
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.22",
+          "targets": 28462
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.32",
+          "targets": 48007
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.14",
+          "targets": 15416
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.17",
+          "targets": 19522
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.29",
+          "targets": 417
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.30",
+          "targets": 120501
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.33",
+          "targets": 1079068
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.6",
+          "targets": 5439
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.8",
+          "targets": 49304
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.1",
+          "targets": 5497
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.18",
+          "targets": 471
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.37",
+          "targets": 466
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.25",
+          "targets": 99102
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.5",
+          "targets": 7232
+        },
+        {
+          "branch": "8.5",
+          "version": "8.5.5",
+          "targets": 12938
+        },
+        {
+          "branch": "8.5",
+          "version": "8.5.7",
+          "targets": 22765
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.16",
+          "targets": 5365
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.19",
+          "targets": 8568
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.21",
+          "targets": 20940
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.36",
+          "targets": 351
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.15",
+          "targets": 10481
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.30",
+          "targets": 151670
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.6",
+          "targets": 28478
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.10",
+          "targets": 7118
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.11",
+          "targets": 24428
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.2",
+          "targets": 4352
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.1",
+          "targets": 3566
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.15",
+          "targets": 17519
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.17",
+          "targets": 6852
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.11",
+          "targets": 10617
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.26",
+          "targets": 28939
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.29",
+          "targets": 59735
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.35",
+          "targets": 2276444
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.1",
+          "targets": 4478
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.21",
+          "targets": 67480
+        },
+        {
+          "branch": "8.5",
+          "version": "8.5.0",
+          "targets": 18859
+        },
+        {
+          "branch": "8.5",
+          "version": "8.5.1",
+          "targets": 8698
+        },
+        {
+          "branch": "8.5",
+          "version": "8.5.10",
+          "targets": 52558
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.24",
+          "targets": 11505
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.26",
+          "targets": 12369
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.27",
+          "targets": 70725
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.4",
+          "targets": 19171
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.16",
+          "targets": 10796
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.23",
+          "targets": 11735
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.28",
+          "targets": 29907
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.38",
+          "targets": 381
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.8",
+          "targets": 935114
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.13",
+          "targets": 17869
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.16",
+          "targets": 29731
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.27",
+          "targets": 1363943
+        },
+        {
+          "branch": "8.5",
+          "version": "8.5.13",
+          "targets": 130
+        },
+        {
+          "branch": "8.5",
+          "version": "8.5.2",
+          "targets": 11941
+        },
+        {
+          "branch": "8.5",
+          "version": "8.5.4",
+          "targets": 18779
+        },
+        {
+          "branch": "8.2",
+          "version": "8.2.20",
+          "targets": 75038
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.3",
+          "targets": 4407
+        },
+        {
+          "branch": "8.4",
+          "version": "8.4.19",
+          "targets": 28077
+        },
+        {
+          "branch": "8.3",
+          "version": "8.3.5",
+          "targets": 89
+        }
+      ],
+      "patched_daily": [
+        {
+          "day": "2026-10-21",
+          "targets": 173577
+        },
+        {
+          "day": "2026-10-22",
+          "targets": 4336529
+        },
+        {
+          "day": "2026-10-23",
+          "targets": 2025015
+        }
+      ]
+    }
+  },
+  "oxTimeline": [
+    {
+      "label": "최초 관측",
+      "hours": 0,
+      "observed": 2224364,
+      "affected": 1991515,
+      "patched": 245,
+      "unpatchedRate": 99.99
+    },
+    {
+      "label": "12시간 후",
+      "hours": 12,
+      "observed": 2194607,
+      "affected": 1965127,
+      "patched": 4519,
+      "unpatchedRate": 99.77
+    },
+    {
+      "label": "24시간 후",
+      "hours": 24,
+      "observed": 2206457,
+      "affected": 1974890,
+      "patched": 14151,
+      "unpatchedRate": 99.28
+    }
+  ],
+  "technologies": [
+    {
+      "name": "WordPress",
+      "observed": 41882,
+      "affected": 33075,
+      "patched": 299,
+      "rate": 99.1
+    },
+    {
+      "name": "phpMyAdmin",
+      "observed": 33927,
+      "affected": 28285,
+      "patched": 157,
+      "rate": 99.45
+    },
+    {
+      "name": "Drupal",
+      "observed": 5078,
+      "affected": 3919,
+      "patched": 31,
+      "rate": 99.22
+    },
+    {
+      "name": "Laravel",
+      "observed": 2261,
+      "affected": 2040,
+      "patched": 36,
+      "rate": 98.27
+    },
+    {
+      "name": "Joomla",
+      "observed": 1099,
+      "affected": 646,
+      "patched": 4,
+      "rate": 99.38
+    },
+    {
+      "name": "cPanel",
+      "observed": 2403,
+      "affected": 587,
+      "patched": 0,
+      "rate": 100
+    },
+    {
+      "name": "Magento",
+      "observed": 126,
+      "affected": 48,
+      "patched": 0,
+      "rate": 100
+    }
+  ],
+  "discovery": {
+    "checkedAt": "2026-10-23T02:53:36.685Z",
+    "languages": [
+      {
+        "code": "en",
+        "country": "US",
+        "name": "영어",
+        "ceid": "US:en",
+        "status": "ok",
+        "backend": "Exa public MCP API",
+        "query": "php2shell exposure statistics patched servers",
+        "checkedAt": "2026-10-23T02:53:27.185Z",
+        "rssStatus": "robots.txt 수집 비허용"
+      },
+      {
+        "code": "ko",
+        "country": "KR",
+        "name": "한국어",
+        "ceid": "KR:ko",
+        "status": "ok",
+        "backend": "Exa public MCP API",
+        "query": "php2shell 취약 서버 통계 패치",
+        "checkedAt": "2026-10-23T02:53:29.043Z",
+        "rssStatus": "robots.txt 수집 비허용"
+      },
+      {
+        "code": "ja",
+        "country": "JP",
+        "name": "일본어",
+        "ceid": "JP:ja",
+        "status": "ok",
+        "backend": "Exa public MCP API",
+        "query": "php2shell 脆弱性 サーバー 統計",
+        "checkedAt": "2026-10-23T02:53:30.378Z",
+        "rssStatus": "robots.txt 수집 비허용"
+      },
+      {
+        "code": "de",
+        "country": "DE",
+        "name": "독일어",
+        "ceid": "DE:de",
+        "status": "ok",
+        "backend": "Exa public MCP API",
+        "query": "php2shell Sicherheitslücke Server Statistik",
+        "checkedAt": "2026-10-23T02:53:31.604Z",
+        "rssStatus": "robots.txt 수집 비허용"
+      },
+      {
+        "code": "fr",
+        "country": "FR",
+        "name": "프랑스어",
+        "ceid": "FR:fr",
+        "status": "ok",
+        "backend": "Exa public MCP API",
+        "query": "php2shell vulnérabilité serveurs chiffres",
+        "checkedAt": "2026-10-23T02:53:32.763Z",
+        "rssStatus": "robots.txt 수집 비허용"
+      },
+      {
+        "code": "es",
+        "country": "ES",
+        "name": "스페인어",
+        "ceid": "ES:es",
+        "status": "ok",
+        "backend": "Exa public MCP API",
+        "query": "php2shell vulnerabilidad servidores cifras",
+        "checkedAt": "2026-10-23T02:53:34.086Z",
+        "rssStatus": "robots.txt 수집 비허용"
+      },
+      {
+        "code": "pt-BR",
+        "country": "BR",
+        "name": "포르투갈어",
+        "ceid": "BR:pt-419",
+        "status": "ok",
+        "backend": "Exa public MCP API",
+        "query": "php2shell vulnerabilidade servidores números",
+        "checkedAt": "2026-10-23T02:53:35.304Z",
+        "rssStatus": "robots.txt 수집 비허용"
+      },
+      {
+        "code": "zh-TW",
+        "country": "TW",
+        "name": "중국어",
+        "ceid": "TW:zh-Hant",
+        "status": "ok",
+        "backend": "Exa public MCP API",
+        "query": "php2shell 漏洞 伺服器 統計",
+        "checkedAt": "2026-10-23T02:53:36.685Z",
+        "rssStatus": "robots.txt 수집 비허용"
+      }
+    ],
+    "items": [
+      {
+        "title": "PHP2Shell services",
+        "url": "https://php2shell.censys.com/",
+        "publisher": "php2shell.censys.com",
+        "publisherUrl": "https://php2shell.censys.com",
+        "publishedAt": null,
+        "language": "en",
+        "languageName": "영어 검색",
+        "country": "US",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "PHP2Shell Patch Status: Who Patched, Who’s Still Exposed",
+        "url": "https://www.melurna.com/blog/php2shell-patch-status/",
+        "publisher": "melurna.com",
+        "publisherUrl": "https://www.melurna.com",
+        "publishedAt": null,
+        "language": "en",
+        "languageName": "영어 검색",
+        "country": "US",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "PHP の重大な脆弱性(PHP2Shell)世界のメンテナンスと被害 | セキュリティ トピックス",
+        "url": "https://security.entamec.com/php2shell/",
+        "publisher": "security.entamec.com",
+        "publisherUrl": "https://security.entamec.com",
+        "publishedAt": null,
+        "language": "ja",
+        "languageName": "일본어 검색",
+        "country": "JP",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "Reportes de PHP2Shell: estadísticas agregadas",
+        "url": "https://phpvulnerabilities.app/es/report/stats/",
+        "publisher": "phpvulnerabilities.app",
+        "publisherUrl": "https://phpvulnerabilities.app",
+        "publishedAt": null,
+        "language": "de",
+        "languageName": "독일어 검색",
+        "country": "DE",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "VULNERABILIDADES CRÍTICAS DE EXECUÇÃO REMOTA DE CÓDIGO NO PHP",
+        "url": "https://www.gov.br/cisc/pt-br/alertas-de-ciberseguranca/cve-2026-109618-e-cve-2026-109619-cvss-9-2",
+        "publisher": "gov.br",
+        "publisherUrl": "https://www.gov.br",
+        "publishedAt": null,
+        "language": "pt-BR",
+        "languageName": "포르투갈어 검색",
+        "country": "BR",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "PHP2Shell's Patch Is Out. 1.37 Million Servers Will Never Get It",
+        "url": "https://nile1.com/php2shells-patch-is-out-1-37-million-servers-will-never-get-it/",
+        "publisher": "nile1.com",
+        "publisherUrl": "https://nile1.com",
+        "publishedAt": "2026-10-22T20:47:53.000Z",
+        "language": "ko",
+        "languageName": "한국어 검색",
+        "country": "KR",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "PHP2Shell : deux failles PHP à corriger en priorité absolue",
+        "url": "https://www.ledecouvert.fr/cybersecurite-financiere/php2shell-deux-failles-critiques-de-php-imposent-des-correctifs-102026-1562/",
+        "publisher": "ledecouvert.fr",
+        "publisherUrl": "https://www.ledecouvert.fr",
+        "publishedAt": "2026-10-22T18:18:04.000Z",
+        "language": "fr",
+        "languageName": "프랑스어 검색",
+        "country": "FR",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "PHP2Shell Update: One in ten organizations impacted as Europe bears the brunt - Check Point Blog",
+        "url": "https://blog.checkpoint.com/ai-security/php2shell-one-in-ten-organizations-impacted-as-europe-bears-the-brunt/",
+        "publisher": "blog.checkpoint.com",
+        "publisherUrl": "https://blog.checkpoint.com",
+        "publishedAt": "2026-10-22T17:15:13.000Z",
+        "language": "ja",
+        "languageName": "일본어 검색",
+        "country": "JP",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "PHP2Shell Exposure: 73% of 2.2 Million Version-Disclosing PHP Services Run Unsupported Branches - Flare",
+        "url": "https://flare.io/learn/resources/blog/php2shell-exposure",
+        "publisher": "flare.io",
+        "publisherUrl": "https://flare.io",
+        "publishedAt": "2026-10-22T16:26:55.000Z",
+        "language": "en",
+        "languageName": "영어 검색",
+        "country": "US",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "Exposition à PHP2Shell : 73 % des 2.2 millions de services PHP divulguant leur version exécutent des branches non prises en charge - Flare",
+        "url": "https://fr.flare.io/en-apprendre/num%C3%A9riques/blog/exposition-de-php2shell",
+        "publisher": "fr.flare.io",
+        "publisherUrl": "https://fr.flare.io",
+        "publishedAt": "2026-10-22T16:26:55.000Z",
+        "language": "fr",
+        "languageName": "프랑스어 검색",
+        "country": "FR",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "Más de 1 millón de servidores PHP siguen sin parche",
+        "url": "https://www.criptonoticias.com/seguridad-bitcoin/mas-1-millon-servidores-php-sin-parche/",
+        "publisher": "criptonoticias.com",
+        "publisherUrl": "https://www.criptonoticias.com",
+        "publishedAt": "2026-10-22T16:22:12.000Z",
+        "language": "es",
+        "languageName": "스페인어 검색",
+        "country": "ES",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "24 hours to PHP2Shell: 99.3% of PHP Instances Unpatched",
+        "url": "https://www.ox.security/blog/php2shell-24-hours-in-99-3-of-measurable-php-instances-are-still-unpatched/",
+        "publisher": "ox.security",
+        "publisherUrl": "https://www.ox.security",
+        "publishedAt": "2026-10-22T15:37:47.000Z",
+        "language": "en",
+        "languageName": "영어 검색",
+        "country": "US",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "PHP vulnerability by the numbers: attacks, exposed servers",
+        "url": "https://neotechcloudsolutions.com/en/php-vulnerability-numbers-attacks-exposed-servers/",
+        "publisher": "neotechcloudsolutions.com",
+        "publisherUrl": "https://neotechcloudsolutions.com",
+        "publishedAt": "2026-10-22T13:43:51.000Z",
+        "language": "es",
+        "languageName": "스페인어 검색",
+        "country": "ES",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "PHP2Shell Exploitation Started Days Before Patches - SecurityWeek",
+        "url": "https://www.securityweek.com/php2shell-exploitation-started-days-before-patches/",
+        "publisher": "securityweek.com",
+        "publisherUrl": "https://www.securityweek.com",
+        "publishedAt": "2026-10-22T09:48:58.000Z",
+        "language": "en",
+        "languageName": "영어 검색",
+        "country": "US",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "PHP 해킹 비상…국내 취약 서버 11만건 추정에 업계 긴급 대응(종합) | 연합뉴스",
+        "url": "https://www.yna.co.kr/view/AKR20261022104151017",
+        "publisher": "yna.co.kr",
+        "publisherUrl": "https://www.yna.co.kr",
+        "publishedAt": "2026-10-22T08:44:23.000Z",
+        "language": "ko",
+        "languageName": "한국어 검색",
+        "country": "KR",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "PHP2Shell Turns Nearly Half of the Web into Exploitation Infrastructure",
+        "url": "https://www.island.io/blog/php2shell-turns-nearly-half-of-the-web-into-exploitation-infrastructure",
+        "publisher": "island.io",
+        "publisherUrl": "https://www.island.io",
+        "publishedAt": "2026-10-22T02:40:52.000Z",
+        "language": "fr",
+        "languageName": "프랑스어 검색",
+        "country": "FR",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "php2shell» en las versiones de PHP que el desarrollador ...",
+        "url": "https://tuxcare.com/es/blog/php2shell-cve/",
+        "publisher": "tuxcare.com",
+        "publisherUrl": "https://tuxcare.com",
+        "publishedAt": "2026-10-22T00:00:00.000Z",
+        "language": "es",
+        "languageName": "스페인어 검색",
+        "country": "ES",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "Así es PHP2Shell, el fallo que amenaza a siete de cada diez webs | Actualidad Económica",
+        "url": "https://www.elmundo.es/economia/2026/10/21/6ad92780fc6c83a57e8b45a4.html",
+        "publisher": "elmundo.es",
+        "publisherUrl": "https://www.elmundo.es",
+        "publishedAt": "2026-10-21T21:05:33.000Z",
+        "language": "es",
+        "languageName": "스페인어 검색",
+        "country": "ES",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "Oct 21 Advisory: php2shell - PHP Unauthenticated Remote Code Execution [CVE-2026-109618, CVE-2026-109619] (Updating Live) - Censys",
+        "url": "https://censys.com/advisory/cve-2026-109618-cve-2026-109619/",
+        "publisher": "censys.com",
+        "publisherUrl": "https://censys.com",
+        "publishedAt": "2026-10-21T15:31:57.000Z",
+        "language": "pt-BR",
+        "languageName": "포르투갈어 검색",
+        "country": "BR",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "PHP2Shell: 22M exposed servers at risk as emergency patches released | TechTarget",
+        "url": "https://www.techtarget.com/cybersecurity/news/366652444/PHP2Shell-22M-exposed-servers-at-risk-as-emergency-patches-released",
+        "publisher": "techtarget.com",
+        "publisherUrl": "https://www.techtarget.com",
+        "publishedAt": "2026-10-21T12:37:00.000Z",
+        "language": "ko",
+        "languageName": "한국어 검색",
+        "country": "KR",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "Sizing the PHP exposure window for CVE-2026-109618 and CVE-2026-109619 with VirusTotal ~ VirusTotal Blog",
+        "url": "https://blog.virustotal.com/2026/10/sizing-php-exposure-window-for-cve-2026.html",
+        "publisher": "blog.virustotal.com",
+        "publisherUrl": "https://blog.virustotal.com",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "language": "en",
+        "languageName": "영어 검색",
+        "country": "US",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "PHP2Shell: finding and patching affected PHP | ProjectDiscovery Research",
+        "url": "https://projectdiscovery.io/research/php2shell",
+        "publisher": "projectdiscovery.io",
+        "publisherUrl": "https://projectdiscovery.io",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "language": "ko",
+        "languageName": "한국어 검색",
+        "country": "KR",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      },
+      {
+        "title": "PHP: Kritische Schwachstellen bedrohen ...",
+        "url": "https://www.bsi.bund.de/SharedDocs/Cybersicherheitswarnungen/DE/2026/2026-297981-1032.pdf?__blob=publicationFile&v=3",
+        "publisher": "bsi.bund.de",
+        "publisherUrl": "https://www.bsi.bund.de",
+        "publishedAt": "2026-10-21T00:00:00.000Z",
+        "language": "de",
+        "languageName": "독일어 검색",
+        "country": "DE",
+        "backend": "Exa public MCP API",
+        "status": "discovered",
+        "note": "검색 색인에서 발견. 기사 언어는 검색어 언어와 다를 수 있으며, 본문 수치는 검증 전입니다."
+      }
+    ],
+    "scope": "8개 언어 검색어 · Google News RSS / Exa 공개 검색 API. 검색어 언어와 기사 언어는 다를 수 있습니다. 전체 웹을 포괄하지 않습니다."
+  },
+  "methodology": {
+    "coverage": "bounded_public_sources",
+    "sourceCount": 8,
+    "noGlobalTotal": true,
+    "noHostScanning": true,
+    "robotsRespected": true,
+    "minimumOriginDelaySeconds": 1,
+    "refreshSeconds": 3600
+  }
+}
